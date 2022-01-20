@@ -14,13 +14,13 @@ Here are the data for the project:
 
 The R script called *run_analysis.R* does the following:
 
-1.-Download the data from the url.
+1.-Download the data from the url described above and unzip it.
 
 2.-Merges the training and the test sets to create one data set.
 
 3.-Extracts only the measurements on the mean and standard deviation for each measurement.
 
-4.-Uses descriptive activity names to name the activities in the data set
+4.-Uses descriptive activity names to name the activities in the data set.
 
 5.-Appropriately labels the data set with descriptive variable names.
 
