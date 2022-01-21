@@ -43,10 +43,12 @@ mean_std_columns <- grep("-mean()|-std()", features_names)
 mean_std_indexes <- mean_std_columns + 2 
 mean_std_data <- data[, c(1,2, mean_std_indexes)]
 
+
 # STEP 3 - Uses descriptive activity names to name the activities in the data set
 activity_data <- read.table(paste(data_path, "\\activity_labels.txt", sep = ""))
 colnames(activity_data) <- c("Id", "Activity")
 mean_std_data$Activity <- activity_data$Activity[mean_std_data$Activity]
+
 
 # STEP 4 - Appropriately labels the data set with descriptive variable names
 # based on the features_info.txt file
@@ -64,6 +66,7 @@ label_names <- gsub("Gyro", "Gyroscope", label_names)
 label_names <- gsub("Mag", "Magnitude", label_names)
 label_names <- gsub("Freq$", "Frequency", label_names)
 names(mean_std_data) <- label_names
+
 
 # STEP 5 - From the data set in step 4, creates a second, independent tidy data set 
 # with the average of each variable for each activity and each subject
