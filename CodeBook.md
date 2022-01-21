@@ -1,15 +1,17 @@
-# GettingAndCleaningData - CodeBook
+# Getting and Cleaning Data - Code Book
 
-**DS Specialization**
+**Data Science Specialization**
 
 This codebook describes each variable and its units, the data, and any transformations or work that you performed to clean up the data.
 
-There are tow text files as result of the transformations done in the run_analysis.R script, which are the following:
-- by_activity_subject_header.txt
-  Contains the header of the result file.
-- by_activity_subject_data.txt
-  Contains the data from the train and test files, group by the activity and the subject 
-The columns are the following:
+
+There are two text files as result of the transformations done in the run_analysis.R script, which are the following:
+
+- "*by_activity_subject_header.txt*": contains the header of the result file.
+- "*by_activity_subject_data.txt*": contains the data from the train and test files, group by the activity and the subject.
+
+The type of each variable is described as follows:
+
         Activity: chr
         Subject: int
         TimeDomainSignal.BodyAccelerometer.Mean.CoordX: num
@@ -52,45 +54,54 @@ The columns are the following:
         TimeDomainSignal.BodyGyroscopeMagnitude.StandardDeviation: num
         TimeDomainSignal.BodyGyroscopeJerkMagnitude.Mean: num
         TimeDomainSignal.BodyGyroscopeJerkMagnitude.StandardDeviation: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.Mean.CoordX: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.Mean.CoordY: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.Mean.CoordZ: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.StandardDeviation.CoordX: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.StandardDeviation.CoordY: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.StandardDeviation.CoordZ: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.MeanFrequency.CoordX: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.MeanFrequency.CoordY: num
-        FrequencyuencyDomainSignal.BodyAccelerometer.MeanFrequency.CoordZ: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.Mean.CoordX: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.Mean.CoordY: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.Mean.CoordZ: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.StandardDeviation.CoordX: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.StandardDeviation.CoordY: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.StandardDeviation.CoordZ: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.MeanFrequency.CoordX: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.MeanFrequency.CoordY: num
-        FrequencyuencyDomainSignal.BodyAccelerometerJerk.MeanFrequency.CoordZ: num
-        FrequencyuencyDomainSignal.BodyGyroscope.Mean.CoordX: num
-        FrequencyuencyDomainSignal.BodyGyroscope.Mean.CoordY: num
-        FrequencyuencyDomainSignal.BodyGyroscope.Mean.CoordZ: num
-        FrequencyuencyDomainSignal.BodyGyroscope.StandardDeviation.CoordX: num
-        FrequencyuencyDomainSignal.BodyGyroscope.StandardDeviation.CoordY: num
-        FrequencyuencyDomainSignal.BodyGyroscope.StandardDeviation.CoordZ: num
-        FrequencyuencyDomainSignal.BodyGyroscope.MeanFrequency.CoordX: num
-        FrequencyuencyDomainSignal.BodyGyroscope.MeanFrequency.CoordY: num
-        FrequencyuencyDomainSignal.BodyGyroscope.MeanFrequency.CoordZ: num
-        FrequencyuencyDomainSignal.BodyAccelerometerMagnitude.Mean: num
-        FrequencyuencyDomainSignal.BodyAccelerometerMagnitude.StandardDeviation: num
-        FrequencyuencyDomainSignal.BodyAccelerometerMagnitude.MeanFrequency: num
-        FrequencyuencyDomainSignal.BodyBodyAccelerometerJerkMagnitude.Mean: num
-        FrequencyuencyDomainSignal.BodyBodyAccelerometerJerkMagnitude.StandardDeviation: num
-        FrequencyuencyDomainSignal.BodyBodyAccelerometerJerkMagnitude.MeanFrequency: num
-        FrequencyuencyDomainSignal.BodyBodyGyroscopeMagnitude.Mean: num
-        FrequencyuencyDomainSignal.BodyBodyGyroscopeMagnitude.StandardDeviation: num
-        FrequencyuencyDomainSignal.BodyBodyGyroscopeMagnitude.MeanFrequency: num
-        FrequencyuencyDomainSignal.BodyBodyGyroscopeJerkMagnitude.Mean: num
-        FrequencyuencyDomainSignal.BodyBodyGyroscopeJerkMagnitude.StandardDeviation: num
-        FrequencyuencyDomainSignal.BodyBodyGyroscopeJerkMagnitude.MeanFrequency: num
+        FrequencyDomainSignal.BodyAccelerometer.Mean.CoordX: num
+        FrequencyDomainSignal.BodyAccelerometer.Mean.CoordY: num
+        FrequencyDomainSignal.BodyAccelerometer.Mean.CoordZ: num
+        FrequencyDomainSignal.BodyAccelerometer.StandardDeviation.CoordX: num
+        FrequencyDomainSignal.BodyAccelerometer.StandardDeviation.CoordY: num
+        FrequencyDomainSignal.BodyAccelerometer.StandardDeviation.CoordZ: num
+        FrequencyDomainSignal.BodyAccelerometer.MeanFrequency.CoordX: num
+        FrequencyDomainSignal.BodyAccelerometer.MeanFrequency.CoordY: num
+        FrequencyDomainSignal.BodyAccelerometer.MeanFrequency.CoordZ: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.Mean.CoordX: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.Mean.CoordY: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.Mean.CoordZ: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.StandardDeviation.CoordX: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.StandardDeviation.CoordY: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.StandardDeviation.CoordZ: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.MeanFrequency.CoordX: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.MeanFrequency.CoordY: num
+        FrequencyDomainSignal.BodyAccelerometerJerk.MeanFrequency.CoordZ: num
+        FrequencyDomainSignal.BodyGyroscope.Mean.CoordX: num
+        FrequencyDomainSignal.BodyGyroscope.Mean.CoordY: num
+        FrequencyDomainSignal.BodyGyroscope.Mean.CoordZ: num
+        FrequencyDomainSignal.BodyGyroscope.StandardDeviation.CoordX: num
+        FrequencyDomainSignal.BodyGyroscope.StandardDeviation.CoordY: num
+        FrequencyDomainSignal.BodyGyroscope.StandardDeviation.CoordZ: num
+        FrequencyDomainSignal.BodyGyroscope.MeanFrequency.CoordX: num
+        FrequencyDomainSignal.BodyGyroscope.MeanFrequency.CoordY: num
+        FrequencyDomainSignal.BodyGyroscope.MeanFrequency.CoordZ: num
+        FrequencyDomainSignal.BodyAccelerometerMagnitude.Mean: num
+        FrequencyDomainSignal.BodyAccelerometerMagnitude.StandardDeviation: num
+        FrequencyDomainSignal.BodyAccelerometerMagnitude.MeanFrequency: num
+        FrequencyDomainSignal.BodyBodyAccelerometerJerkMagnitude.Mean: num
+        FrequencyDomainSignal.BodyBodyAccelerometerJerkMagnitude.StandardDeviation: num
+        FrequencyDomainSignal.BodyBodyAccelerometerJerkMagnitude.MeanFrequency: num
+        FrequencyDomainSignal.BodyBodyGyroscopeMagnitude.Mean: num
+        FrequencyDomainSignal.BodyBodyGyroscopeMagnitude.StandardDeviation: num
+        FrequencyDomainSignal.BodyBodyGyroscopeMagnitude.MeanFrequency: num
+        FrequencyDomainSignal.BodyBodyGyroscopeJerkMagnitude.Mean: num
+        FrequencyDomainSignal.BodyBodyGyroscopeJerkMagnitude.StandardDeviation: num
+        FrequencyDomainSignal.BodyBodyGyroscopeJerkMagnitude.MeanFrequency: num
+        
+The description of each variable is described as follows:
 
-For more details about these fields, please check the original data stored in the repository as getdata_projectfiles_UCI HAR Dataset.zip or check online in <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
+1. Activity data comes directly from the corresponding train and test files: "*train\\X_train.txt*" and "*test\\subject_test.txt*"
+This data are stored using the descriptive activity names from the "*\\activity_labels.txt*" file. 
+1. Subject data comes directly from the corresponding train and test files: "*\\train\\subject_train.txt*" and "*\\test\\subject_test.txt*"
+1. The rest of the columns comes from the values of the mean and standard deviation of the train and test data stored in: "*\\train\\X_train.txt*" and "*\\test\\X_test.txt*"
+and their column names are defined in the "*\\features.txt*" file. All this data has been grouped by activity and subject, and the average of each variable has been calculated as a result tidy data set.
+
+
+This code book attempts to be a continuation of the code book of the raw data used in this project. For further information, please check their code book located in the getdata_projectfiles_UCI HAR Dataset.zip file in the [GettingAndCleaningData GitHub repository](https://github.com/beatriz-gutierrez/GettingAndCleaningData) or check them online in <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
