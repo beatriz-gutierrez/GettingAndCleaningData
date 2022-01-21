@@ -62,7 +62,7 @@ label_names<- gsub("^f", "FrequencyDomainSignal.", label_names)
 label_names <- gsub("Acc", "Accelerometer", label_names)
 label_names <- gsub("Gyro", "Gyroscope", label_names)
 label_names <- gsub("Mag", "Magnitude", label_names)
-label_names <- gsub("Freq", "Frequency", label_names)
+label_names <- gsub("Freq$", "Frequency", label_names)
 names(mean_std_data) <- label_names
 
 # STEP 5 - From the data set in step 4, creates a second, independent tidy data set 
